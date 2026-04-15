@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
      pill is clicked. Updates aria-pressed for screen readers.
   ══════════════════════════════════════════════════════════════════ */
   const filterBtns = document.querySelectorAll('.btn-filter');
-  const progItems  = document.querySelectorAll('.prog-item');
-  const noResults  = document.getElementById('no-results');
+  const progItems = document.querySelectorAll('.prog-item');
+  const noResults = document.getElementById('no-results');
 
   if (filterBtns.length > 0) {
 
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.setAttribute('aria-pressed', 'true');
 
         var selected = btn.getAttribute('data-filter'); // e.g. "4-6" or "all"
-        var visible  = 0;
+        var visible = 0;
 
         progItems.forEach(function (item) {
           // data-age may contain multiple ranges separated by spaces
@@ -75,19 +75,19 @@ document.addEventListener('DOMContentLoaded', function () {
       // Prevent real submission (static site)
       e.preventDefault();
 
-      var cardNum   = document.getElementById('card-number');
-      var expiry    = document.getElementById('expiry');
-      var cvv       = document.getElementById('cvv');
-      var cardName  = document.getElementById('card-name');
-      var agreeChk  = document.getElementById('agree-terms');
-      var errorBox  = document.getElementById('form-error');
+      var cardNum = document.getElementById('card-number');
+      var expiry = document.getElementById('expiry');
+      var cvv = document.getElementById('cvv');
+      var cardName = document.getElementById('card-name');
+      var agreeChk = document.getElementById('agree-terms');
+      var errorBox = document.getElementById('form-error');
       var confirmEl = document.getElementById('confirmation-box');
 
       // Simple presence check — all fields must be non-empty and checkbox ticked
       var valid = (
         cardNum.value.trim().length > 0 &&
-        expiry.value.trim().length  > 0 &&
-        cvv.value.trim().length     > 0 &&
+        expiry.value.trim().length > 0 &&
+        cvv.value.trim().length > 0 &&
         cardName.value.trim().length > 0 &&
         agreeChk.checked
       );
@@ -102,7 +102,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (confirmEl) {
           confirmEl.classList.remove('d-none');
           confirmEl.classList.add('animate__animated', 'animate__fadeInUp');
-          confirmEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          confirmEl.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
         }
         // Disable the submit button to prevent double-submission
         payForm.querySelector('.btn-submit').disabled = true;
@@ -121,9 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
   if (cardInput) {
     cardInput.addEventListener('input', function () {
       // Strip all non-digits, then add spaces every 4 chars
-      var digits  = this.value.replace(/\D/g, '').substring(0, 16);
-      var spaced  = digits.replace(/(.{4})/g, '$1 ').trim();
-      this.value  = spaced;
+      var digits = this.value.replace(/\D/g, '').substring(0, 16);
+      var spaced = digits.replace(/(.{4})/g, '$1 ').trim();
+      this.value = spaced;
     });
   }
 

@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Register for a program at REC CENTER. Complete your enrollment in 3 easy steps." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for a program at REC CENTER. Complete your enrollment in 3 easy steps.">
 
   <title>Register | REC CENTER</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <!-- Load website fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Load Bootstrap styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Animate.css – publicly available CSS animation library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Load animation library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Load our own styles -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  <!-- Skip link -->
+  <!-- Accessibility link: lets keyboard users jump to main content -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- ══════════════════════════════ NAVIGATION ══════════════════════════════ -->
+  <!-- Top navigation bar -->
   <header>
-    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-sm" aria-label="Main navigation">
       <div class="container">
         <a class="navbar-brand" href="index.html" aria-label="REC CENTER home">REC CENTER</a>
 
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false"
-                aria-label="Toggle navigation menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation menu">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 me-lg-3">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="youth-programs.html">Programs</a></li>
-            <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="youth-programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="register.html">Register</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
           </ul>
@@ -53,10 +55,10 @@
     </nav>
   </header>
 
-  <!-- ══════════════════════════════ MAIN ══════════════════════════════ -->
+  <!-- Main page content -->
   <main id="main-content">
 
-    <!-- ── Page Header ── -->
+    <!-- Intro text for this page -->
     <section class="page-header">
       <div class="container">
         <h1>Register for a Program</h1>
@@ -64,128 +66,92 @@
       </div>
     </section>
 
-    <!-- ── Step Indicator ── -->
-    <!-- Shows progress: Parent Info → Child Info → Payment -->
+    <!-- Shows registration progress -->
     <div class="container">
       <div class="steps-container" role="list" aria-label="Registration steps">
 
-        <!-- Step 1: Parent Info (done) -->
+        <!-- Step 1 is completed -->
         <div class="step-item" role="listitem">
-          <div class="step-circle done" aria-label="Step 1 complete: Parent Info">
-            <!-- Checkmark SVG -->
+          <div class="step-circle done" role="img" aria-label="Step 1 complete: Parent Info">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
             </svg>
           </div>
           <span class="step-label done">Parent Info</span>
         </div>
 
-        <!-- Connector line 1–2 (done) -->
+        <!-- Line between step 1 and 2 -->
         <div class="step-line done" aria-hidden="true"></div>
 
-        <!-- Step 2: Child Info (done) -->
+        <!-- Step 2 is completed -->
         <div class="step-item" role="listitem">
-          <div class="step-circle done" aria-label="Step 2 complete: Child Info">
+          <div class="step-circle done" role="img" aria-label="Step 2 complete: Child Info">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
             </svg>
           </div>
           <span class="step-label done">Child Info</span>
         </div>
 
-        <!-- Connector line 2–3 (not done) -->
+        <!-- Line between step 2 and 3 -->
         <div class="step-line" aria-hidden="true"></div>
 
-        <!-- Step 3: Payment (active) -->
+        <!-- Step 3 is the current step -->
         <div class="step-item" role="listitem">
-          <div class="step-circle active" aria-label="Step 3 current: Payment" aria-current="step">3</div>
+          <div class="step-circle active" role="img" aria-label="Step 3 current: Payment" aria-current="step">3</div>
           <span class="step-label active">Payment</span>
         </div>
 
       </div>
     </div>
 
-    <!-- ── Form + Order Summary ── -->
+    <!-- Payment form and order summary section -->
     <section class="section-padded pt-0" aria-labelledby="payment-heading">
       <div class="container">
         <div class="row g-4">
 
-          <!-- LEFT: Payment form -->
+          <!-- Left side: payment form -->
           <div class="col-12 col-lg-7">
             <div class="form-card">
               <h2 id="payment-heading">Payment Information</h2>
 
-              <!-- 
-                Form uses novalidate so we can handle custom validation via JS.
-                All fields use aria-required and aria-describedby for screen readers.
-              -->
               <form id="payment-form" novalidate aria-label="Payment information form">
 
-                <!-- Card Number -->
+                <!-- Card number field -->
                 <div class="mb-4">
                   <label class="form-label" for="card-number">Card Number</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="card-number"
-                    placeholder="•••• •••• •••• ••••"
-                    autocomplete="cc-number"
-                    aria-required="true"
-                    aria-describedby="card-number-help"
-                    inputmode="numeric"
-                    maxlength="19" />
+                  <input type="text" class="form-control" id="card-number" placeholder="•••• •••• •••• ••••"
+                    autocomplete="cc-number" aria-required="true" aria-describedby="card-number-help"
+                    inputmode="numeric" maxlength="19">
                   <div id="card-number-help" class="form-text" style="font-size:0.78rem; color: var(--rc-text-muted);">
                     Enter your 16-digit card number.
                   </div>
                 </div>
 
-                <!-- Expiry + CVV side by side on tablet+ -->
+                <!-- Expiry date and CVV fields -->
                 <div class="row g-3 mb-4">
                   <div class="col-12 col-sm-6">
                     <label class="form-label" for="expiry">Expiry Date</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="expiry"
-                      placeholder="MM / YY"
-                      autocomplete="cc-exp"
-                      aria-required="true"
-                      inputmode="numeric"
-                      maxlength="7" />
+                    <input type="text" class="form-control" id="expiry" placeholder="MM / YY" autocomplete="cc-exp"
+                      aria-required="true" inputmode="numeric" maxlength="7">
                   </div>
                   <div class="col-12 col-sm-6">
                     <label class="form-label" for="cvv">CVV</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cvv"
-                      placeholder="123"
-                      autocomplete="cc-csc"
-                      aria-required="true"
-                      inputmode="numeric"
-                      maxlength="4" />
+                    <input type="text" class="form-control" id="cvv" placeholder="123" autocomplete="cc-csc"
+                      aria-required="true" inputmode="numeric" maxlength="4">
                   </div>
                 </div>
 
-                <!-- Name on card — full width -->
+                <!-- Card holder name field -->
                 <div class="mb-4">
                   <label class="form-label" for="card-name">Name on Card</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="card-name"
-                    placeholder="Full name as shown on card"
-                    autocomplete="cc-name"
-                    aria-required="true" />
+                  <input type="text" class="form-control" id="card-name" placeholder="Full name as shown on card"
+                    autocomplete="cc-name" aria-required="true">
                 </div>
 
-                <!-- Terms & Conditions checkbox -->
+                <!-- User must accept terms -->
                 <div class="form-check mb-3">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="agree-terms"
-                    aria-required="true" />
+                  <input class="form-check-input" type="checkbox" id="agree-terms" aria-required="true">
                   <label class="form-check-label" for="agree-terms" style="font-size:0.85rem;">
                     I agree to the
                     <a href="#" aria-label="Read Terms and Conditions">Terms &amp; Conditions</a>
@@ -195,70 +161,72 @@
                   </label>
                 </div>
 
-                <!-- Error message (hidden until form validation fails) -->
+                <!-- Error message shown when fields are missing -->
                 <div id="form-error" class="alert alert-danger d-none" role="alert" aria-live="assertive">
                   Please fill in all required fields and agree to the terms.
                 </div>
 
-                <!-- Submit button -->
+                <!-- Submit registration button -->
                 <button type="submit" class="btn-submit">Submit Registration</button>
 
-                <!-- Back link -->
+                <!-- Link to go back -->
                 <a href="youth-programs.html" class="btn-back">← Back to Child Info</a>
 
               </form>
             </div>
-          </div><!-- /col left -->
+          </div>
 
-          <!-- RIGHT: Order summary + confirmation -->
+          <!-- Right side: order details and success message -->
           <div class="col-12 col-lg-5">
 
-            <!-- Order Summary card -->
-            <div class="order-summary" aria-label="Order summary">
-              <h3>Order Summary</h3>
+            <!-- Order cost breakdown -->
+            <section aria-labelledby="order-summary-heading">
+              <div class="order-summary">
+                <h3 id="order-summary-heading">Order Summary</h3>
 
-              <div class="order-row">
-                <span>Swim Lessons — Child 1</span>
-                <span>$120.00</span>
-              </div>
-              <div class="order-row">
-                <span>Swim Lessons — Child 2</span>
-                <span>$120.00</span>
-              </div>
-              <div class="order-row discount">
-                <span>Sibling Discount (10%)</span>
-                <span>−$12.00</span>
-              </div>
+                <div class="order-row">
+                  <span>Swim Lessons — Child 1</span>
+                  <span>$120.00</span>
+                </div>
+                <div class="order-row">
+                  <span>Swim Lessons — Child 2</span>
+                  <span>$120.00</span>
+                </div>
+                <div class="order-row discount">
+                  <span>Sibling Discount (10%)</span>
+                  <span>−$12.00</span>
+                </div>
 
-              <div class="order-total">
-                <span>Total</span>
-                <span>$228.00</span>
+                <div class="order-total">
+                  <span>Total</span>
+                  <span>$228.00</span>
+                </div>
               </div>
-            </div>
+            </section>
 
-            <!-- Confirmation panel (shown after submit via JS) -->
-            <div class="confirmation-box d-none" id="confirmation-box" role="status" aria-live="polite" aria-label="Registration confirmed">
+            <!-- Success panel shown after submit -->
+            <div class="confirmation-box d-none" id="confirmation-box" role="status" aria-live="polite">
               <div class="confirmation-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                 </svg>
               </div>
-              <h4>Registration Confirmed!</h4>
+              <h3>Registration Confirmed!</h3>
               <p>
                 A confirmation email has been sent to your inbox.
                 You'll receive a reminder 24 hours before your first session.
               </p>
             </div>
 
-          </div><!-- /col right -->
+          </div>
 
-        </div><!-- /row -->
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <!-- Footer with links and contact info -->
   <footer>
     <div class="container">
       <div class="row">
@@ -267,21 +235,21 @@
           <p class="footer-tagline">Your community recreation center — welcoming, active, and accessible for all.</p>
         </div>
         <div class="col-6 col-md-2">
-          <h4>Programs</h4>
+          <h3>Programs</h3>
           <ul>
             <li><a href="youth-programs.html">Ice Sports</a></li>
             <li><a href="youth-programs.html">Aquatics</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-2">
-          <h4>Facilities</h4>
+          <h3>Facilities</h3>
           <ul>
             <li><a href="#">Ice Rink</a></li>
             <li><a href="#">Pool</a></li>
           </ul>
         </div>
         <div class="col-12 col-md-4 mt-4 mt-md-0 footer-contact">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <p><a href="mailto:info@reccenter.ca" style="color:rgba(255,255,255,0.65);">info@reccenter.ca</a></p>
           <p><a href="tel:6135550100" style="color:rgba(255,255,255,0.65);">613-555-0100</a></p>
         </div>
@@ -293,35 +261,42 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Inline script: confirmation fallback in case main.js path fails -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var form    = document.getElementById('payment-form');
+      // Get the form and hidden confirmation box.
+      var form = document.getElementById('payment-form');
       var confirm = document.getElementById('confirmation-box');
 
+      // Stop here if elements are missing.
       if (!form || !confirm) return;
 
       form.addEventListener('submit', function (e) {
+        // Prevent page refresh on submit.
         e.preventDefault();
 
-        var cardNum  = document.getElementById('card-number').value.trim();
-        var expiry   = document.getElementById('expiry').value.trim();
-        var cvv      = document.getElementById('cvv').value.trim();
-        var name     = document.getElementById('card-name').value.trim();
-        var agreed   = document.getElementById('agree-terms').checked;
+        // Read user input values.
+        var cardNum = document.getElementById('card-number').value.trim();
+        var expiry = document.getElementById('expiry').value.trim();
+        var cvv = document.getElementById('cvv').value.trim();
+        var name = document.getElementById('card-name').value.trim();
+        var agreed = document.getElementById('agree-terms').checked;
         var errorBox = document.getElementById('form-error');
 
+        // Show error if any required field is empty or terms are not accepted.
         if (!cardNum || !expiry || !cvv || !name || !agreed) {
           errorBox.classList.remove('d-none');
           return;
         }
 
-        /* Valid — hide error, show confirmation */
+        // Hide error and show success panel.
         errorBox.classList.add('d-none');
         confirm.classList.remove('d-none');
-        confirm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        confirm.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
 
-        /* Disable submit button */
+        // Disable button so user does not submit twice.
         var btn = form.querySelector('button[type="submit"]');
         btn.disabled = true;
         btn.textContent = 'Submitted ✓';
@@ -329,4 +304,5 @@
     });
   </script>
 </body>
+
 </html>
