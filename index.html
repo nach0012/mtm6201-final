@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your Community Recreation Center — programs for every age and ability, from youth swim lessons to adult ice hockey." />
+
+  <title>Home | REC CENTER</title>
+
+  <!-- Google Fonts: DM Serif Display (headings) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css – publicly available CSS animation library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Fix: prevent page <footer> styles from bleeding into testimonial cards -->
+  <style>
+    .testimonial-card .author-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ══════════════════════════════ NAVIGATION ══════════════════════════════ -->
+  <header>
+   <nav class="navbar navbar-expand-md" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="REC CENTER home">REC CENTER</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 me-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="youth-programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <a href="register.html" class="btn btn-book ms-lg-2 mt-2 mt-lg-0">Book Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════ MAIN CONTENT ══════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── Hero Section ── -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
+            <h1>
+              Your Community<br>
+              <span class="highlight">Recreation</span> Center
+            </h1>
+            <p class="lead mt-3">
+              Programs for every age and ability — from youth swim lessons
+              to adult ice hockey. Find your fit and feel at home.
+            </p>
+            <div class="d-flex gap-3 flex-wrap mt-4">
+              <a href="register.html" class="btn-hero-primary">Book Now</a>
+              <a href="youth-programs.html" class="btn-hero-outline">View Schedules</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0 animate__animated animate__fadeInRight">
+            <picture>
+              <source media="(min-width: 992px)" srcset="images/hero-large.jpg" width="660" height="260" />
+              <img src="images/hero-large.jpg" alt="Group of adults exercising outdoors at the recreation centre" class="hero-img" width="540" height="200" loading="eager" />
+            </picture>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Explore Programs ── -->
+    <section class="section-padded" aria-labelledby="explore-heading">
+      <div class="container">
+        <h2 class="section-title" id="explore-heading">Explore Programs</h2>
+    <div class="row g-3 justify-content-center">
+
+   
+<div class="col-6 col-md-3">
+            <a href="youth-programs.html" class="text-decoration-none" aria-label="Browse Aquatics programs">
+              <div class="prog-cat-card" tabindex="0" role="button">
+                <div class="prog-cat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M22 21c-1.11 0-1.73-.37-2.18-.64-.37-.22-.6-.36-1.15-.36s-.78.14-1.15.36c-.45.27-1.07.64-2.18.64s-1.73-.37-2.18-.64c-.37-.22-.6-.36-1.15-.36s-.78.14-1.15.36c-.45.27-1.07.64-2.18.64s-1.73-.37-2.18-.64C6.22 20.14 6 20 5.45 20s-.78.14-1.15.36C3.85 20.63 3.22 21 2 21v-2c.55 0 .78-.14 1.15-.36C3.6 18.37 4.23 18 5.34 18s1.73.37 2.18.64c.37.22.6.36 1.15.36s.78-.14 1.15-.36c.45-.27 1.07-.64 2.18-.64s1.73.37 2.18.64c.37.22.6.36 1.15.36s.78-.14 1.15-.36c.45-.27 1.07-.64 2.18-.64s1.73.37 2.18.64c.37.22.6.36 1.15.36V21zM8.67 12H7V9h2v-.59l.59-.59.91.91-.59.59-.24.68zM17 9h-3v3h-2V9h-2V7h7v2zm2-4.5c0 .83-.67 1.5-1.5 1.5S16 5.33 16 4.5 16.67 3 17.5 3 19 3.67 19 4.5z"/>
+                  </svg>
+                </div>
+                <span>Ice Sports</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <a href="youth-programs.html" class="text-decoration-none" aria-label="Browse Family programs">
+              <div class="prog-cat-card" tabindex="0" role="button">
+                <div class="prog-cat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                  </svg>
+                </div>
+                <span>Aquatics</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <a href="youth-programs.html" class="text-decoration-none" aria-label="Browse Fitness programs">
+              <div class="prog-cat-card" tabindex="0" role="button">
+                <div class="prog-cat-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/>
+                  </svg>
+                </div>
+                <span>Fitness</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Youth Banner ── -->
+    <div class="youth-banner" role="complementary" aria-label="Youth programs highlight">
+      <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <p class="label mb-0">
+          Youth Programs —&nbsp;<span class="ages">Ages 4 to 12</span>&nbsp;· Safe, certified, fun
+        </p>
+        <a href="youth-programs.html" class="btn-hero-primary" style="font-size:0.85rem; padding:0.45rem 1.1rem;">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+
+    <!-- ── Featured Programs ── -->
+    <section class="section-padded" aria-labelledby="featured-heading">
+      <div class="container">
+        <h2 class="section-title" id="featured-heading">Featured Programs</h2>
+
+       <div class="row g-4 justify-content-center">
+
+  <!-- Swim Lessons – Youth -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="prog-card" aria-label="Swim Lessons – Youth">
+      <div class="prog-card-badge badge-youth-1">Youth</div>
+      <img src="images/youth-card-large.jpg" alt="Children in swim caps during a swim lesson at the pool" class="prog-card-img" loading="lazy" />
+      <div class="prog-card-body">
+        <h3 class="prog-card-title">Swim Lessons</h3>
+        <p class="prog-card-subtitle">Youth Programs · Ages 6–12</p>
+        <div class="prog-detail"><span class="prog-dot"></span>Mon / Wed · 4:00 PM</div>
+        <div class="prog-detail"><span class="prog-dot"></span>Max 6 students per class</div>
+        <div class="prog-detail"><span class="prog-dot"></span>Certified instructor</div>
+      </div>
+      <div class="prog-card-footer">
+        <div class="prog-price">$120<span>/session</span></div>
+        <a href="register.html" class="btn-enroll">Enroll Now</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Junior Skaters -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="prog-card" aria-label="Junior Skaters – Youth">
+      <div class="prog-card-badge badge-youth-2">Senior</div>
+      <img src="images/senior-card-large.jpg" alt="Senior swim lessons" class="prog-card-img" loading="lazy" />
+      <div class="prog-card-body">
+        <h3 class="prog-card-title">Junior Skaters</h3>
+        <p class="prog-card-subtitle">Youth Programs · Ages 4–6</p>
+        <div class="prog-detail"><span class="prog-dot"></span>Sat · 9:00 AM</div>
+        <div class="prog-detail"><span class="prog-dot"></span>Max 8 students per class</div>
+        <div class="prog-detail"><span class="prog-dot"></span>Certified instructor</div>
+      </div>
+      <div class="prog-card-footer">
+        <div class="prog-price">$90<span>/session</span></div>
+        <a href="register.html" class="btn-enroll">Enroll Now</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Ice Hockey -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <article class="prog-card" aria-label="Ice Hockey – Adult">
+      <div class="prog-card-badge badge-youth-3">Adult</div>
+      <img src="images/adults-card-large.jpg" alt="Adults skating on ice rink" class="prog-card-img" loading="lazy" />
+      <div class="prog-card-body">
+        <h3 class="prog-card-title">Ice Hockey</h3>
+        <p class="prog-card-subtitle">Adult League · Recreational</p>
+        <div class="prog-detail"><span class="prog-dot"></span>Fri · 7:00 PM – 9:00 PM</div>
+        <div class="prog-detail"><span class="prog-dot"></span>Equipment available</div>
+        <div class="prog-detail"><span class="prog-dot"></span>League + open ice</div>
+      </div>
+      <div class="prog-card-footer">
+        <div class="prog-price">$200<span>/session</span></div>
+        <a href="register.html" class="btn-enroll">Enroll Now</a>
+      </div>
+    </article>
+  </div>
+
+</div>
+
+    <!-- ── Why Choose Us ── -->
+    <section class="section-gray" aria-labelledby="why-heading">
+      <div class="container">
+        <h2 class="section-title" id="why-heading">Why Choose Us</h2>
+        <div class="row g-4">
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              </div>
+              <h3>Certified Instructors</h3>
+              <p>All instructors are nationally certified with first aid training and background checks completed.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+                </svg>
+              </div>
+              <h3>Accessible Facility</h3>
+              <p>Full accessibility features including ramps, elevators, adapted equipment, and accessible change rooms.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon-circle amber" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                </svg>
+              </div>
+              <h3>Flexible Scheduling</h3>
+              <p>Morning, afternoon, and evening classes available 7 days a week to fit every lifestyle.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="section-padded" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 class="section-title" id="testimonials-heading">What Members Say</h2>
+        <div class="row g-4">
+
+          <!-- Kate L. -->
+          <div class="col-12 col-md-4">
+            <blockquote class="testimonial-card">
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p>My kids love the swim lessons here. The instructors are patient and the facility is spotless. We've been coming every week for two years!</p>
+              <!-- Changed <footer> to <div class="author-info"> to prevent page footer CSS bleeding in -->
+              <div class="author-info">
+                <div class="avatar-circle" aria-hidden="true">KL</div>
+                <div>
+                  <div class="testimonial-name">Kate L.</div>
+                  <div class="testimonial-role">Parent · Swim Lessons</div>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <!-- Gerald R. -->
+          <div class="col-12 col-md-4">
+            <blockquote class="testimonial-card">
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p>Aqua Fitness has changed my life. At 68, I feel stronger than ever. The senior program is thoughtfully designed.</p>
+              <div class="author-info">
+                <div class="avatar-circle teal" aria-hidden="true">GR</div>
+                <div>
+                  <div class="testimonial-name">Gerald R.</div>
+                  <div class="testimonial-role">Senior · Aqua Fitness</div>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+          <!-- Alex M. -->
+          <div class="col-12 col-md-4">
+            <blockquote class="testimonial-card">
+              <p class="testimonial-quote" aria-hidden="true">"</p>
+              <p>Booking ice time used to be a hassle. Now I do it in seconds online. Great rink, great league.</p>
+              <div class="author-info">
+                <div class="avatar-circle" aria-hidden="true">AM</div>
+                <div>
+                  <div class="testimonial-name">Alex M.</div>
+                  <div class="testimonial-role">Adult · Ice Hockey</div>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /#main-content -->
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="footer-brand">REC CENTER</div>
+          <p class="footer-tagline">Your community recreation center — welcoming, active, and accessible for all.</p>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="youth-programs.html">Ice Sports</a></li>
+            <li><a href="youth-programs.html">Aquatics</a></li>
+            <li><a href="youth-programs.html">Fitness</a></li>
+            <li><a href="youth-programs.html">Family</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4>Facilities</h4>
+          <ul>
+            <li><a href="#">Ice Rink</a></li>
+            <li><a href="#">Pool</a></li>
+            <li><a href="#">Gym</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4 mt-4 mt-md-0 footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:info@reccenter.ca" style="color:rgba(255,255,255,0.65);">info@reccenter.ca</a></p>
+          <p><a href="tel:6135550100" style="color:rgba(255,255,255,0.65);">613-555-0100</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        REC CENTER &copy; 2026 · All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

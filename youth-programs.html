@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Youth Programs at REC CENTER — safe, certified programs for children ages 4–12. Filter by age, enroll online." />
+
+  <title>Youth Programs | REC CENTER</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Animate.css – publicly available CSS animation library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ══════════════════════════════ NAVIGATION ══════════════════════════════ -->
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="REC CENTER home">REC CENTER</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 me-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="youth-programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Facilities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+          <a href="register.html" class="btn btn-book ms-lg-2 mt-2 mt-lg-0">Book Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════ MAIN ══════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ── Page Header ── -->
+    <section class="page-header">
+      <div class="container">
+        <!-- Desktop: title left, button right. Mobile: stacked -->
+        <div class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row gap-3">
+          <div>
+            <h1>Youth Programs</h1>
+            <p>Safe, fun, and skill-building programs for children ages 4–12.<br class="d-none d-md-block">
+               All instructors are certified and background checked.</p>
+          </div>
+          <a href="#programs-grid" class="btn-view-all">View All Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Filter + Programs Grid ── -->
+    <section class="section-padded" aria-labelledby="programs-heading">
+      <div class="container">
+
+        <!-- Age filter pills -->
+        <div aria-label="Filter programs by age group">
+          <h2 class="section-title mb-3" id="filter-heading">Filter by Age</h2>
+          <div class="filter-group" role="group" aria-labelledby="filter-heading">
+            <button class="btn-filter active" data-filter="all"  aria-pressed="true">All Ages</button>
+            <button class="btn-filter"         data-filter="4-6"  aria-pressed="false">Ages 4–6</button>
+            <button class="btn-filter"         data-filter="7-9"  aria-pressed="false">Ages 7–9</button>
+            <button class="btn-filter"         data-filter="10-12" aria-pressed="false">Ages 10–12</button>
+          </div>
+        </div>
+
+        <!-- Programs grid — cards shown/hidden via JS filter -->
+        <h2 class="section-title" id="programs-heading">Programs</h2>
+        <div class="row g-4" id="programs-grid">
+
+          <!-- ── Swim Lessons (Ages 6–12) ── -->
+          <div class="col-12 col-sm-6 col-lg-4 prog-item" data-age="7-9 10-12">
+            <article class="youth-card" aria-label="Swim Lessons, ages 6 to 12">
+              <div class="youth-card-badge badge-612">Ages 6–12</div>
+              <div class="youth-card-body">
+                <h3 class="youth-card-title">Swim Lessons</h3>
+                <p class="youth-card-time">Mon / Wed · 4:00 PM</p>
+                <div class="check-badge" aria-label="Certified Instructor">
+                  <!-- Checkmark icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Certified Instructor
+                </div>
+                <p class="youth-card-max">Max 6 students per class</p>
+                <p class="youth-price">$120 <span>/ session</span></p>
+              </div>
+              <a href="register.html" class="btn-enroll-outline">Enroll Now</a>
+            </article>
+          </div>
+
+          <!-- ── Junior Skaters (Ages 4–6) ── -->
+          <div class="col-12 col-sm-6 col-lg-4 prog-item" data-age="4-6">
+            <article class="youth-card" aria-label="Junior Skaters, ages 4 to 6">
+              <div class="youth-card-badge badge-46">Ages 4–6</div>
+              <div class="youth-card-body">
+                <h3 class="youth-card-title">Junior Skaters</h3>
+                <p class="youth-card-time">Sat · 9:00 AM</p>
+                <div class="check-badge" aria-label="Certified Instructor">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Certified Instructor
+                </div>
+                <p class="youth-card-max">Max 8 students per class</p>
+                <p class="youth-price">$90 <span>/ session</span></p>
+              </div>
+              <a href="register.html" class="btn-enroll-outline">Enroll Now</a>
+            </article>
+          </div>
+
+          <!-- ── Youth Gymnastics (Ages 7–12) ── -->
+          <div class="col-12 col-sm-6 col-lg-4 prog-item" data-age="7-9 10-12">
+            <article class="youth-card" aria-label="Youth Gymnastics, ages 7 to 12">
+              <div class="youth-card-badge badge-712">Ages 7–12</div>
+              <div class="youth-card-body">
+                <h3 class="youth-card-title">Youth Gymnastics</h3>
+                <p class="youth-card-time">Thu · 5:00 PM</p>
+                <div class="check-badge" aria-label="Certified Instructor">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                  </svg>
+                  Certified Instructor
+                </div>
+                <p class="youth-card-max">Max 10 students per class</p>
+                <p class="youth-price">$110 <span>/ session</span></p>
+              </div>
+              <a href="register.html" class="btn-enroll-outline">Enroll Now</a>
+            </article>
+          </div>
+
+         
+
+        </div><!-- /#programs-grid -->
+
+        <!-- No results message (hidden by default) -->
+        <p id="no-results" class="text-muted mt-4 d-none" role="status" aria-live="polite">
+          No programs found for this age group. Try selecting "All Ages".
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ── Safety & Qualifications ── -->
+    <section class="section-gray" aria-labelledby="safety-heading">
+      <div class="container">
+        <h2 class="section-title" id="safety-heading">Safety &amp; Qualifications</h2>
+        <div class="row g-4">
+
+          <!-- Background checked -->
+          <div class="col-12 col-md-4">
+            <div class="qual-item">
+              <div class="qual-icon" aria-hidden="true">
+                <!-- Shield icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+              </div>
+              <div class="qual-text">
+                <h4>Background Checked Staff</h4>
+                <p>All staff undergo full criminal background screening before working with youth.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- First Aid -->
+          <div class="col-12 col-md-4">
+            <div class="qual-item">
+              <div class="qual-icon amber" aria-hidden="true">
+                <!-- Plus/medical icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                </svg>
+              </div>
+              <div class="qual-text">
+                <h4>First Aid Certified</h4>
+                <p>Every instructor holds current Standard First Aid and CPR-C certification.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nationally Certified -->
+          <div class="col-12 col-md-4">
+            <div class="qual-item">
+              <div class="qual-icon" aria-hidden="true">
+                <!-- Certificate icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14l-3-3-3 3V6h6v11z"/>
+                </svg>
+              </div>
+              <div class="qual-text">
+                <h4>Nationally Certified Instructors</h4>
+                <p>Coaches certified through Swim Canada, Skate Canada, or equivalent national bodies.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Transparent Pricing Table ── -->
+    <section class="section-padded" aria-labelledby="pricing-heading">
+      <div class="container">
+        <h2 class="section-title" id="pricing-heading">Transparent Pricing</h2>
+        <!-- Responsive table wrapper for mobile horizontal scroll -->
+        <div class="table-responsive">
+          <table class="pricing-table" aria-label="Program pricing with sibling discounts and family rates">
+            <thead>
+              <tr>
+                <th scope="col">Program</th>
+                <th scope="col">Per Child</th>
+                <th scope="col">Sibling Discount</th>
+                <th scope="col">Family Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Swim Lessons</strong></td>
+                <td><strong>$120</strong></td>
+                <td><span class="discount-pill">10% off</span></td>
+                 <td><strong>$216</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Junior Skaters</strong></td>
+                 <td><strong>$90</strong></td>
+                <td><strong><span class="discount-pill">10% off</span></strong></td>
+                <td><strong>$162</strong></td>
+              </tr>
+        
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="footer-brand">REC CENTER</div>
+          <p class="footer-tagline">Your community recreation center — welcoming, active, and accessible for all.</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="youth-programs.html">Ice Sports</a></li>
+            <li><a href="youth-programs.html">Aquatics</a></li>
+            <li><a href="youth-programs.html">Fitness</a></li>
+            <li><a href="youth-programs.html">Family</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h4>Facilities</h4>
+          <ul>
+            <li><a href="#">Ice Rink</a></li>
+            <li><a href="#">Pool</a></li>
+            <li><a href="#">Gym</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-4 mt-md-0 footer-contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:info@reccenter.ca" style="color:rgba(255,255,255,0.65);">info@reccenter.ca</a></p>
+          <p><a href="tel:6135550100" style="color:rgba(255,255,255,0.65);">613-555-0100</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">REC CENTER &copy; 2026 · All rights reserved</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
